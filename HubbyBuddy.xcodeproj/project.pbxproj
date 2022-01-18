@@ -12,9 +12,12 @@
 		6B54633E2796C61300036A09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54633D2796C61300036A09 /* ViewController.swift */; };
 		6B5463432796C61900036A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B5463422796C61900036A09 /* Assets.xcassets */; };
 		6B5463462796C61900036A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5463442796C61900036A09 /* LaunchScreen.storyboard */; };
+		6B54634E2796C7AB00036A09 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54634D2796C7AB00036A09 /* LogInView.swift */; };
+		FE598EBF792082550DF44231 /* Pods_HubbyBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE385D60DA1A8AE7CDF6517E /* Pods_HubbyBuddy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		588B41C52C6140F16CBB5C12 /* Pods-HubbyBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubbyBuddy.debug.xcconfig"; path = "Target Support Files/Pods-HubbyBuddy/Pods-HubbyBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		6B5463362796C61300036A09 /* HubbyBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubbyBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B5463392796C61300036A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B54633B2796C61300036A09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		6B5463422796C61900036A09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B5463452796C61900036A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B5463472796C61900036A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B54634D2796C7AB00036A09 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		9D9B8718E4B4031647B011BF /* Pods-HubbyBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubbyBuddy.release.xcconfig"; path = "Target Support Files/Pods-HubbyBuddy/Pods-HubbyBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		EE385D60DA1A8AE7CDF6517E /* Pods_HubbyBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HubbyBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE598EBF792082550DF44231 /* Pods_HubbyBuddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12224B932092C3C13C7D9B9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE385D60DA1A8AE7CDF6517E /* Pods_HubbyBuddy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6B54632D2796C61200036A09 = {
 			isa = PBXGroup;
 			children = (
 				6B5463382796C61300036A09 /* HubbyBuddy */,
 				6B5463372796C61300036A09 /* Products */,
+				E5B1608F9D0C0D4A2E29D16F /* Pods */,
+				12224B932092C3C13C7D9B9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +74,21 @@
 				6B5463392796C61300036A09 /* AppDelegate.swift */,
 				6B54633B2796C61300036A09 /* SceneDelegate.swift */,
 				6B54633D2796C61300036A09 /* ViewController.swift */,
+				6B54634D2796C7AB00036A09 /* LogInView.swift */,
 				6B5463422796C61900036A09 /* Assets.xcassets */,
 				6B5463442796C61900036A09 /* LaunchScreen.storyboard */,
 				6B5463472796C61900036A09 /* Info.plist */,
 			);
 			path = HubbyBuddy;
+			sourceTree = "<group>";
+		};
+		E5B1608F9D0C0D4A2E29D16F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				588B41C52C6140F16CBB5C12 /* Pods-HubbyBuddy.debug.xcconfig */,
+				9D9B8718E4B4031647B011BF /* Pods-HubbyBuddy.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B54634A2796C61900036A09 /* Build configuration list for PBXNativeTarget "HubbyBuddy" */;
 			buildPhases = (
+				BC4B1B6CAA16EC1FC9D7CC49 /* [CP] Check Pods Manifest.lock */,
 				6B5463322796C61300036A09 /* Sources */,
 				6B5463332796C61300036A09 /* Frameworks */,
 				6B5463342796C61300036A09 /* Resources */,
+				F9B114424742451137DD6050 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +158,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BC4B1B6CAA16EC1FC9D7CC49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HubbyBuddy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9B114424742451137DD6050 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HubbyBuddy/Pods-HubbyBuddy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HubbyBuddy/Pods-HubbyBuddy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HubbyBuddy/Pods-HubbyBuddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6B5463322796C61300036A09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -136,6 +207,7 @@
 			files = (
 				6B54633E2796C61300036A09 /* ViewController.swift in Sources */,
 				6B54633A2796C61300036A09 /* AppDelegate.swift in Sources */,
+				6B54634E2796C7AB00036A09 /* LogInView.swift in Sources */,
 				6B54633C2796C61300036A09 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +344,7 @@
 		};
 		6B54634B2796C61900036A09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 588B41C52C6140F16CBB5C12 /* Pods-HubbyBuddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,6 +373,7 @@
 		};
 		6B54634C2796C61900036A09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D9B8718E4B4031647B011BF /* Pods-HubbyBuddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
