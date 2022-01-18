@@ -31,7 +31,7 @@ class LogInView: UIView {
         self.backgroundColor = .systemBackground
         
         welcomLabel.text = "새싹 서비스 이용을 위해 \n 휴대폰 번호를 입력해 주세요"
-        welcomLabel.font = .systemFont(ofSize: 20)
+        welcomLabel.font = .boldSystemFont(ofSize: 20)
         welcomLabel.setTextWithLineHeight(text: welcomLabel.text, lineHeight: 32)
         welcomLabel.textColor = .black
         welcomLabel.textAlignment = .center
@@ -41,7 +41,7 @@ class LogInView: UIView {
         //pnView.backgroundColor = .systemGray
         
         pnTextField.placeholder = "휴대폰 번호 (-없이 숫자만 입력)"
-        pnTextField.font = .boldSystemFont(ofSize: 14)
+        pnTextField.font = .systemFont(ofSize: 14)
         pnTextField.attributedPlaceholder = NSAttributedString(string: pnTextField.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
         pnTextField.textAlignment = .left
         pnTextField.keyboardType = .numberPad

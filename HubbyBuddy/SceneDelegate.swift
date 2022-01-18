@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         
-        let vc = PhoneAuthViewController()
+        let vc = LogInViewController()
         //vc.title = "main"
         let navVC = UINavigationController(rootViewController: vc)
         window.rootViewController = navVC
