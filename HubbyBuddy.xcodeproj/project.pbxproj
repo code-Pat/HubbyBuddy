@@ -85,22 +85,54 @@
 		6B5463382796C61300036A09 /* HubbyBuddy */ = {
 			isa = PBXGroup;
 			children = (
-				6B5463392796C61300036A09 /* AppDelegate.swift */,
-				6B54633B2796C61300036A09 /* SceneDelegate.swift */,
-				6B54634D2796C7AB00036A09 /* LogInView.swift */,
+				6B5463682797F87D00036A09 /* Defaults */,
+				6B5463672797F85D00036A09 /* Helpers */,
+				6B5463662797F85700036A09 /* Views */,
+				6B5463652797F85100036A09 /* Controllers */,
+			);
+			path = HubbyBuddy;
+			sourceTree = "<group>";
+		};
+		6B5463652797F85100036A09 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				6B54634F2796C7DC00036A09 /* LogInViewController.swift */,
 				6B54635F2797F08700036A09 /* SMSCodeViewController.swift */,
-				6B5463572797E08C00036A09 /* AuthManager.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6B5463662797F85700036A09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B54634D2796C7AB00036A09 /* LogInView.swift */,
 				6B5463632797F7B900036A09 /* SMSCodeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B5463672797F85D00036A09 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6B5463572797E08C00036A09 /* AuthManager.swift */,
 				6B5463512796C80B00036A09 /* UILabel+Extension.swift */,
 				6B5463532796C82600036A09 /* UIColor+Extension.swift */,
 				6B5463552796C84000036A09 /* CALayer+Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6B5463682797F87D00036A09 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				6B5463392796C61300036A09 /* AppDelegate.swift */,
+				6B54633B2796C61300036A09 /* SceneDelegate.swift */,
 				6B5463422796C61900036A09 /* Assets.xcassets */,
 				6B5463442796C61900036A09 /* LaunchScreen.storyboard */,
 				6B5463472796C61900036A09 /* Info.plist */,
 				6B5463612797F18D00036A09 /* GoogleService-Info.plist */,
 			);
-			path = HubbyBuddy;
+			path = Defaults;
 			sourceTree = "<group>";
 		};
 		E5B1608F9D0C0D4A2E29D16F /* Pods */ = {
