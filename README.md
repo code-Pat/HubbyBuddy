@@ -18,5 +18,10 @@
 * 휴대폰 번호 인증을 통한 로그인 기능 구현을 위한 LogInView와 LogInViewController 작성 -> 기본 UI 완성
 * 레이블, 색상, 뷰 레이어 관리를 위한 (UILabel, UIColor, CALayer)+Extension 파일 작성.
 
+---
 
+#### **22.01.19 (수)**
+
+* Auth 관련 함수들을 관리하는 AuthManager 생성. 
+* 
 
