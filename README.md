@@ -23,5 +23,9 @@
 #### **22.01.19 (수)**
 
 * Auth 관련 함수들을 관리하는 AuthManager 생성. 
-* 
 
+#### **22.01.20(목)**
+
+* SMSCodeView, SMSCodeViewController 생성.
+* LogInVC에서 휴대폰 번호를 입력하고 버튼 클릭 시 firebase auth에서 reCapcha 진행 후 인증 번호 발송, SMSCodeVC에서 인증 번호 입력 후 다음 버튼 클릭시 1) 회원이면 메인 페이지로, 2) 회원이 아닐 경우 회원가입 페이지로 화면 전환.
+* SMSCode 부분 UI완료 및 기능구현 80% 완료 -> 인증 번호 받고 인증 하는 작업까지 완료, 재전송 기능 추가 필요.

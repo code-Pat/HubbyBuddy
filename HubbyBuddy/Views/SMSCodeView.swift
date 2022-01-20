@@ -46,7 +46,7 @@ class SMSCodeView: UIView {
         descriptionLabel.font = .systemFont(ofSize: 16)
         descriptionLabel.textAlignment = .center
         
-        codeTextField.placeholder = "인증번호 입력"
+        codeTextField.placeholder = "  인증번호 입력"
         codeTextField.attributedPlaceholder = NSAttributedString(string: codeTextField.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
         codeTextField.font = .systemFont(ofSize: 14)
         codeTextField.textAlignment = .left

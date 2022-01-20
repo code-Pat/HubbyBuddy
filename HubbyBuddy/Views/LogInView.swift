@@ -40,7 +40,7 @@ class LogInView: UIView {
         pnView.layer.addBorder([.top], color: .systemGray, width: 1.0)
         //pnView.backgroundColor = .systemGray
         
-        pnTextField.placeholder = "휴대폰 번호 (-없이 숫자만 입력)"
+        pnTextField.placeholder = "  휴대폰 번호 (-없이 숫자만 입력)"
         pnTextField.font = .systemFont(ofSize: 14)
         pnTextField.attributedPlaceholder = NSAttributedString(string: pnTextField.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
         pnTextField.textAlignment = .left
