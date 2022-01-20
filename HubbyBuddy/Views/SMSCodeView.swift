@@ -19,7 +19,7 @@ class SMSCodeView: UIView {
     let timeLabel = UILabel()
     
     let resendButton = UIButton()
-    let nextButoon = UIButton()
+    let nextButton = UIButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -50,6 +50,81 @@ class SMSCodeView: UIView {
         codeTextField.textAlignment = .left
         codeTextField.keyboardType = .numberPad
         
-        timeLabel
+        timeLabel.text = "5:00"
+        timeLabel.font = .systemFont(ofSize: 16)
+        timeLabel.textAlignment = .center
+        timeLabel.textColor = .systemGreen
+        
+        resendButton.setTitle("재전송", for: .normal)
+        resendButton.setTitleColor(.systemBackground, for: .normal)
+        resendButton.backgroundColor = .systemGreen
+        resendButton.layer.cornerRadius = 15
+        
+        nextButton.setTitle("인증하고 시작하기", for: .normal)
+        nextButton.setTitleColor(.systemBackground, for: .normal)
+        nextButton.backgroundColor = .systemGray
+        nextButton.layer.cornerRadius = 12
+    }
+    
+    func setConstraints() {
+        
+        addSubview(topView)
+        addSubview(mainLabel)
+        addSubview(descriptionLabel)
+        addSubview(midview)
+        addSubview(codeTextField)
+        addSubview(timeLabel)
+        addSubview(resendButton)
+        addSubview(nextButton)
+        
+        topView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(80)
+            make.centerX.equalToSuperview()
+            make.width.equalTo(260)
+            make.height.equalTo(66)
+        }
+        
+        mainLabel.snp.makeConstraints { make in
+            make.top.equalTo(topView.snp.top)
+            make.leading.equalTo(topView.snp.leading)
+            make.trailing.equalTo(topView.snp.trailing)
+            make.height.equalTo(32)
+        }
+        descriptionLabel.snp.makeConstraints { make in
+            make.top.equalTo(mainLabel.snp.bottom)
+            make.leading.equalTo(topView.snp.leading)
+            make.trailing.equalTo(topView.snp.trailing)
+            make.height.equalTo(34)
+        }
+        midview.snp.makeConstraints { make in
+            make.top.equalTo(topView.snp.bottom).offset(60)
+            make.leading.equalToSuperview().offset(16)
+            make.width.equalTo(263)
+            make.height.equalTo(48)
+        }
+        codeTextField.snp.makeConstraints { make in
+            make.top.equalTo(midview.snp.top)
+            make.leading.equalTo(midview.snp.leading)
+            make.width.equalTo(200)
+        }
+        timeLabel.snp.makeConstraints { make in
+            make.top.equalTo(midview.snp.top).offset(13)
+            make.leading.equalTo(codeTextField.snp.trailing).offset(15)
+            make.trailing.equalTo(midview.snp.trailing)
+            make.height.equalTo(22)
+        }
+        resendButton.snp.makeConstraints { make in
+            make.top.equalTo(topView.snp.bottom).offset(60)
+            make.leading.equalTo(midview.snp.trailing).offset(10)
+            make.trailing.equalToSuperview().offset(15)
+            make.height.equalTo(40)
+        }
+        nextButton.snp.makeConstraints { make in
+            make.top.equalTo(midview.snp.bottom).offset(72)
+            make.centerX.equalToSuperview()
+            make.width.equalTo(343)
+            make.height.equalTo(48)
+        }
+        
     }
 }

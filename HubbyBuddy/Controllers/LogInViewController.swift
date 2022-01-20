@@ -30,14 +30,17 @@ class LogInViewController: UIViewController {
     
     @objc func pnTextFieldDidchange(_ textfield: UITextField) {
         phonenumber = textfield.text ?? ""
+        print(phonenumber)
     }
     
     @objc func verifyBtnClicked() {
         let number = "+82\(phonenumber)"
+        print(number)
         AuthManager.shared.startAuth(phoneNumber: number) { [weak self] success in
             guard success else { return }
             DispatchQueue.main.async {
                 let vc = SMSCodeViewController()
+                vc.title = ""
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
         }
