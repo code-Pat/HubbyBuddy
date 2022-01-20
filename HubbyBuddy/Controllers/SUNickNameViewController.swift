@@ -13,6 +13,7 @@ import Foundation
 import UIKit
 
 class SUNickNameViewController: UIViewController {
+    
     let mainView = SUNickNameView()
     
     override func loadView() {
@@ -22,5 +23,12 @@ class SUNickNameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mainView.nextButton.addTarget(self, action: #selector(nextBtnClicked), for: .touchUpInside)
+    }
+    
+    @objc func nextBtnClicked() {
+        let vc = SUBirthViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

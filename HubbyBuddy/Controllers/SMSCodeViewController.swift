@@ -45,8 +45,9 @@ class SMSCodeViewController: UIViewController {
             guard success else { return }
             DispatchQueue.main.async {
                 let vc = SUNickNameViewController()
-                vc.modalPresentationStyle = .fullScreen
-                self?.present(vc, animated: true)
+                self?.navigationController?.pushViewController(vc, animated: true)
+//                vc.modalPresentationStyle = .fullScreen
+//                self?.present(vc, animated: true)
             }
         }
     }

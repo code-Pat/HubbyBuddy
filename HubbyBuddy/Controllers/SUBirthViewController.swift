@@ -19,4 +19,6 @@ class SUBirthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
 }

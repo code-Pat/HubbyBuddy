@@ -11,6 +11,8 @@ import UIKit
 
 class SUBirthView: UIView {
     
+    let datePicker = UIDatePicker()
+    
     let welcomLabel = UILabel()
     
     let birthView = UIView()
@@ -29,12 +31,44 @@ class SUBirthView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        createDatePicker()
         setup()
         setupConstraints()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+    }
+    
+    func createDatePicker() {
+        //toolbar
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        //bar button
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneBtnClicked))
+        toolbar.setItems([doneBtn], animated: true)
+        
+        //assign toolbar
+        yearTextField.inputAccessoryView = toolbar
+        monthTextField.inputAccessoryView = toolbar
+        dayTextField.inputAccessoryView = toolbar
+        
+        yearTextField.inputView = datePicker
+        monthTextField.inputView = datePicker
+        dayTextField.inputView = datePicker
+        
+        datePicker.datePickerMode = .date
+        
+    }
+    
+    @objc func doneBtnClicked() {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        
+        self.endEditing(true)
+        
     }
     
     func setup() {
