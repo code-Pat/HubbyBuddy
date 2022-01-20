@@ -24,6 +24,8 @@ class SMSCodeView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        setup()
+        setupConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -66,7 +68,7 @@ class SMSCodeView: UIView {
         nextButton.layer.cornerRadius = 12
     }
     
-    func setConstraints() {
+    func setupConstraints() {
         
         addSubview(topView)
         addSubview(mainLabel)
@@ -78,7 +80,7 @@ class SMSCodeView: UIView {
         addSubview(nextButton)
         
         topView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(80)
+            make.top.equalToSuperview().offset(163)
             make.centerX.equalToSuperview()
             make.width.equalTo(260)
             make.height.equalTo(66)
@@ -98,7 +100,7 @@ class SMSCodeView: UIView {
         }
         midview.snp.makeConstraints { make in
             make.top.equalTo(topView.snp.bottom).offset(60)
-            make.leading.equalToSuperview().offset(16)
+            make.leading.equalToSuperview().offset(20)
             make.width.equalTo(263)
             make.height.equalTo(48)
         }
@@ -115,8 +117,8 @@ class SMSCodeView: UIView {
         }
         resendButton.snp.makeConstraints { make in
             make.top.equalTo(topView.snp.bottom).offset(60)
-            make.leading.equalTo(midview.snp.trailing).offset(10)
-            make.trailing.equalToSuperview().offset(15)
+            make.leading.equalTo(midview.snp.trailing).offset(15)
+            make.trailing.equalToSuperview().offset(-20)
             make.height.equalTo(40)
         }
         nextButton.snp.makeConstraints { make in

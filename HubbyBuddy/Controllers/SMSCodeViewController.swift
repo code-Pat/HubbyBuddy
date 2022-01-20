@@ -22,6 +22,7 @@ class SMSCodeViewController: UIViewController {
         super.viewDidLoad()
         
         mainView.codeTextField.addTarget(self, action: #selector(codeTextFieldDidChange(_:)), for: .editingChanged)
+        mainView.nextButton.addTarget(self, action: #selector(nextBtnClicked), for: .touchUpInside)
     }
     
     @objc func codeTextFieldDidChange(_ textfield: UITextField) {
