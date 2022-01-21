@@ -10,9 +10,7 @@ import SnapKit
 import UIKit
 
 class SUBirthView: UIView {
-    
-    let datePicker = UIDatePicker()
-    
+
     let welcomLabel = UILabel()
     
     let birthView = UIView()
@@ -31,44 +29,12 @@ class SUBirthView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        createDatePicker()
         setup()
         setupConstraints()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-    }
-    
-    func createDatePicker() {
-        //toolbar
-        let toolbar = UIToolbar()
-        toolbar.sizeToFit()
-        
-        //bar button
-        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneBtnClicked))
-        toolbar.setItems([doneBtn], animated: true)
-        
-        //assign toolbar
-        yearTextField.inputAccessoryView = toolbar
-        monthTextField.inputAccessoryView = toolbar
-        dayTextField.inputAccessoryView = toolbar
-        
-        yearTextField.inputView = datePicker
-        monthTextField.inputView = datePicker
-        dayTextField.inputView = datePicker
-        
-        datePicker.datePickerMode = .date
-        
-    }
-    
-    @objc func doneBtnClicked() {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
-        
-        self.endEditing(true)
-        
     }
     
     func setup() {
@@ -82,31 +48,31 @@ class SUBirthView: UIView {
         
         yearTextField.placeholder = "1990"
         yearTextField.attributedPlaceholder = NSAttributedString(string: yearTextField.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
-        yearTextField.font = .systemFont(ofSize: 14)
-        yearTextField.textAlignment = .left
+        yearTextField.font = .systemFont(ofSize: 16)
+        yearTextField.textAlignment = .center
         
         yearLabel.text = "년"
-        yearLabel.font = .systemFont(ofSize: 14)
+        yearLabel.font = .systemFont(ofSize: 16)
         yearLabel.textColor = .black
         yearLabel.textAlignment = .left
         
         monthTextField.placeholder = "01"
         monthTextField.attributedPlaceholder = NSAttributedString(string: monthTextField.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
-        monthTextField.font = .systemFont(ofSize: 14)
-        monthTextField.textAlignment = .left
+        monthTextField.font = .systemFont(ofSize: 16)
+        monthTextField.textAlignment = .center
         
         monthLabel.text = "월"
-        monthLabel.font = .systemFont(ofSize: 14)
+        monthLabel.font = .systemFont(ofSize: 16)
         monthLabel.textColor = .black
         monthLabel.textAlignment = .left
         
         dayTextField.placeholder = "01"
         dayTextField.attributedPlaceholder = NSAttributedString(string: dayTextField.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
-        dayTextField.font = .systemFont(ofSize: 14)
-        dayTextField.textAlignment = .left
+        dayTextField.font = .systemFont(ofSize: 16)
+        dayTextField.textAlignment = .center
         
         dayLabel.text = "일"
-        dayLabel.font = .systemFont(ofSize: 14)
+        dayLabel.font = .systemFont(ofSize: 16)
         dayLabel.textColor = .black
         dayLabel.textAlignment = .left
         
@@ -129,6 +95,7 @@ class SUBirthView: UIView {
         addSubview(dayView)
         addSubview(dayTextField)
         addSubview(dayLabel)
+        addSubview(nextButton)
         
         welcomLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(185)
@@ -149,7 +116,7 @@ class SUBirthView: UIView {
             make.width.equalTo(100)
         }
         yearTextField.snp.makeConstraints { make in
-            make.top.equalTo(yearView.snp.top)
+            make.centerY.equalTo(yearView)
             make.leading.equalTo(yearView.snp.leading)
             make.width.equalTo(80)
         }
@@ -166,7 +133,7 @@ class SUBirthView: UIView {
             make.width.equalTo(100)
         }
         monthTextField.snp.makeConstraints { make in
-            make.top.equalTo(monthView.snp.top)
+            make.centerY.equalTo(monthView)
             make.leading.equalTo(monthView.snp.leading)
             make.width.equalTo(80)
         }
@@ -183,7 +150,7 @@ class SUBirthView: UIView {
             make.width.equalTo(100)
         }
         dayTextField.snp.makeConstraints { make in
-            make.top.equalTo(dayView.snp.top)
+            make.centerY.equalTo(dayView)
             make.leading.equalTo(dayView.snp.leading)
             make.width.equalTo(80)
         }
@@ -192,6 +159,12 @@ class SUBirthView: UIView {
             make.bottom.equalTo(dayView.snp.bottom)
             make.leading.equalTo(dayTextField.snp.trailing)
             make.trailing.equalTo(dayView.snp.trailing)
+        }
+        nextButton.snp.makeConstraints { make in
+            make.top.equalTo(dayView.snp.bottom).offset(72)
+            make.centerX.equalToSuperview()
+            make.width.equalTo(343)
+            make.height.equalTo(48)
         }
     }
     
