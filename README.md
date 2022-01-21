@@ -39,3 +39,5 @@
 
 * Scenedelegate에서 앱 실행시, 이미 휴대폰 인증이 완료된 경우 바로 회원가입 파트로 시작할 수 있고, 휴대폰 인증이 안 된경우 휴대폰 인증 페이지에서 시작하게끔 설정.
 * SUBirthViewController에 DatePicker wheel스타일 적용 -> datepicker에서 생년월일 선택 시 자동으로 textfields에 입력되게 설정.
+* SUEmailView&ViewController UI 구현.
+* SUGenderView&ViewController UI 구현.

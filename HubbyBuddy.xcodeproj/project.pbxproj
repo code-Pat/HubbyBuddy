@@ -24,6 +24,10 @@
 		6B9BF88827995DE500B9ABE7 /* SUNickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9BF88727995DE500B9ABE7 /* SUNickNameViewController.swift */; };
 		6B9BF88A27996BBB00B9ABE7 /* SUBirthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9BF88927996BBB00B9ABE7 /* SUBirthView.swift */; };
 		6B9BF88C279971B800B9ABE7 /* SUBirthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9BF88B279971B800B9ABE7 /* SUBirthViewController.swift */; };
+		6B9BF88E279A7A6800B9ABE7 /* SUEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9BF88D279A7A6800B9ABE7 /* SUEmailView.swift */; };
+		6B9BF890279A7A7300B9ABE7 /* SUEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9BF88F279A7A7300B9ABE7 /* SUEmailViewController.swift */; };
+		6B9BF892279A82BF00B9ABE7 /* SUGenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9BF891279A82BF00B9ABE7 /* SUGenderView.swift */; };
+		6B9BF894279A82C800B9ABE7 /* SUGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9BF893279A82C800B9ABE7 /* SUGenderViewController.swift */; };
 		FE598EBF792082550DF44231 /* Pods_HubbyBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE385D60DA1A8AE7CDF6517E /* Pods_HubbyBuddy.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +52,10 @@
 		6B9BF88727995DE500B9ABE7 /* SUNickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUNickNameViewController.swift; sourceTree = "<group>"; };
 		6B9BF88927996BBB00B9ABE7 /* SUBirthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUBirthView.swift; sourceTree = "<group>"; };
 		6B9BF88B279971B800B9ABE7 /* SUBirthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUBirthViewController.swift; sourceTree = "<group>"; };
+		6B9BF88D279A7A6800B9ABE7 /* SUEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUEmailView.swift; sourceTree = "<group>"; };
+		6B9BF88F279A7A7300B9ABE7 /* SUEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUEmailViewController.swift; sourceTree = "<group>"; };
+		6B9BF891279A82BF00B9ABE7 /* SUGenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUGenderView.swift; sourceTree = "<group>"; };
+		6B9BF893279A82C800B9ABE7 /* SUGenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUGenderViewController.swift; sourceTree = "<group>"; };
 		9D9B8718E4B4031647B011BF /* Pods-HubbyBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubbyBuddy.release.xcconfig"; path = "Target Support Files/Pods-HubbyBuddy/Pods-HubbyBuddy.release.xcconfig"; sourceTree = "<group>"; };
 		EE385D60DA1A8AE7CDF6517E /* Pods_HubbyBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HubbyBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -110,6 +118,8 @@
 				6B54635F2797F08700036A09 /* SMSCodeViewController.swift */,
 				6B9BF88727995DE500B9ABE7 /* SUNickNameViewController.swift */,
 				6B9BF88B279971B800B9ABE7 /* SUBirthViewController.swift */,
+				6B9BF88F279A7A7300B9ABE7 /* SUEmailViewController.swift */,
+				6B9BF893279A82C800B9ABE7 /* SUGenderViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -121,6 +131,8 @@
 				6B5463632797F7B900036A09 /* SMSCodeView.swift */,
 				6B9BF88527995DD500B9ABE7 /* SUNickNameView.swift */,
 				6B9BF88927996BBB00B9ABE7 /* SUBirthView.swift */,
+				6B9BF88D279A7A6800B9ABE7 /* SUEmailView.swift */,
+				6B9BF891279A82BF00B9ABE7 /* SUGenderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -275,11 +287,15 @@
 				6B5463642797F7B900036A09 /* SMSCodeView.swift in Sources */,
 				6B9BF88C279971B800B9ABE7 /* SUBirthViewController.swift in Sources */,
 				6B5463582797E08C00036A09 /* AuthManager.swift in Sources */,
+				6B9BF892279A82BF00B9ABE7 /* SUGenderView.swift in Sources */,
 				6B54633A2796C61300036A09 /* AppDelegate.swift in Sources */,
+				6B9BF890279A7A7300B9ABE7 /* SUEmailViewController.swift in Sources */,
 				6B5463562796C84000036A09 /* CALayer+Extension.swift in Sources */,
 				6B5463522796C80B00036A09 /* UILabel+Extension.swift in Sources */,
+				6B9BF894279A82C800B9ABE7 /* SUGenderViewController.swift in Sources */,
 				6B9BF88827995DE500B9ABE7 /* SUNickNameViewController.swift in Sources */,
 				6B5463602797F08700036A09 /* SMSCodeViewController.swift in Sources */,
+				6B9BF88E279A7A6800B9ABE7 /* SUEmailView.swift in Sources */,
 				6B54634E2796C7AB00036A09 /* LogInView.swift in Sources */,
 				6B5463502796C7DC00036A09 /* LogInViewController.swift in Sources */,
 				6B9BF88A27996BBB00B9ABE7 /* SUBirthView.swift in Sources */,

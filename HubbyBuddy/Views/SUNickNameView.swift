@@ -37,7 +37,7 @@ class SUNickNameView: UIView {
         
         nicknameTextField.placeholder = "  10자 이내로 입력"
         nicknameTextField.attributedPlaceholder = NSAttributedString(string: nicknameTextField.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
-        nicknameTextField.font = .systemFont(ofSize: 14)
+        nicknameTextField.font = .systemFont(ofSize: 15)
         nicknameTextField.textAlignment = .left
         
         nextButton.setTitle("다음", for: .normal)

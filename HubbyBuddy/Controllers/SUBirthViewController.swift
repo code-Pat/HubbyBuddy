@@ -29,6 +29,8 @@ class SUBirthViewController: UIViewController {
         mainView.dayTextField.inputView = datePicker
         
         setupDatePicker()
+        
+        mainView.nextButton.addTarget(self, action: #selector(nextBtnClicked), for: .touchUpInside)
     }
     
     func setupDatePicker() {
@@ -57,6 +59,11 @@ class SUBirthViewController: UIViewController {
         formatter.dateFormat = "dd"
         let dayName = formatter.string(from: datePicker.date)
         mainView.dayTextField.text = dayName
+    }
+    
+    @objc func nextBtnClicked() {
+        let vc = SUEmailViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

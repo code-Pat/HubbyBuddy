@@ -16,6 +16,7 @@ class LogInViewController: UIViewController {
     
     let mainView = LogInView()
     var phonenumber: String = ""
+    let maxLength = 11
     
     override func loadView() {
         self.view = mainView
@@ -26,6 +27,17 @@ class LogInViewController: UIViewController {
         
         mainView.pnTextField.addTarget(self, action: #selector(pnTextFieldDidchange(_:)), for: .editingChanged)
         mainView.verificationButton.addTarget(self, action: #selector(verifyBtnClicked), for: .touchUpInside)
+    }
+    
+    func editTextField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        guard let text = textField.text else { return false }
+        
+        if text.count >= maxLength && range.length == 0 && range.location < maxLength {
+            return false
+        }
+        
+        return true
     }
     
     @objc func pnTextFieldDidchange(_ textfield: UITextField) {
