@@ -16,14 +16,17 @@ class SUBirthViewController: UIViewController {
     
     let mainView = SUBirthView()
     let datePicker = UIDatePicker()
+    var birthYear: String = ""
+    var birthMonth: String = ""
+    var birthDay: String = ""
     
     override func loadView() {
         self.view = mainView
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         mainView.yearTextField.inputView = datePicker
         mainView.monthTextField.inputView = datePicker
         mainView.dayTextField.inputView = datePicker
@@ -49,16 +52,21 @@ class SUBirthViewController: UIViewController {
         formatter.dateFormat = "YYYY"
         let yearName = formatter.string(from: datePicker.date)
         mainView.yearTextField.text = yearName
+        birthYear = yearName
         
         // 월 값 구하기
         formatter.dateFormat = "MM"
         let monthName = formatter.string(from: datePicker.date)
         mainView.monthTextField.text = monthName
+        birthMonth = monthName
         
         // 일 값 구하기
         formatter.dateFormat = "dd"
         let dayName = formatter.string(from: datePicker.date)
         mainView.dayTextField.text = dayName
+        birthDay = dayName
+        
+        mainView.nextButton.backgroundColor = .orange
     }
     
     @objc func nextBtnClicked() {
