@@ -12,11 +12,10 @@
 import UIKit
 import SnapKit
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, UITextFieldDelegate {
     
     let mainView = LogInView()
     var phonenumber: String = ""
-    let maxLength = 11
     
     override func loadView() {
         self.view = mainView
@@ -27,17 +26,36 @@ class LogInViewController: UIViewController {
         
         mainView.pnTextField.addTarget(self, action: #selector(pnTextFieldDidchange(_:)), for: .editingChanged)
         mainView.verificationButton.addTarget(self, action: #selector(verifyBtnClicked), for: .touchUpInside)
+        
+        mainView.pnTextField.delegate = self
+        
     }
     
-    func editTextField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    
+    private func textLimit(existingText: String?, newText: String, limit: Int) -> Bool {
+        let text = existingText ?? ""
+        let isAtLimit = text.count + newText.count <= limit
+        return isAtLimit
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        guard let text = textField.text else { return false }
+//        guard let text = textField.text else { return false }
+//
+//        if text.count >= maxLength && range.length == 0 && range.location < maxLength {
+//            print("text length: \(text.count)")
+//            return false
+//        }
+//        print("text length: \(text.count)")
+//        return true
         
-        if text.count >= maxLength && range.length == 0 && range.location < maxLength {
-            return false
+        let counter = textLimit(existingText: textField.text, newText: string, limit: 11)
+        let btnCounter = textLimit(existingText: textField.text, newText: string, limit: 10)
+        if btnCounter == false {
+            mainView.verificationButton.backgroundColor = .orange
         }
+        return counter
         
-        return true
     }
     
     @objc func pnTextFieldDidchange(_ textfield: UITextField) {
