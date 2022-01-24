@@ -41,3 +41,11 @@
 * SUBirthViewController에 DatePicker wheel스타일 적용 -> datepicker에서 생년월일 선택 시 자동으로 textfields에 입력되게 설정.
 * SUEmailView&ViewController UI 구현.
 * SUGenderView&ViewController UI 구현.
+
+---
+
+#### **22.01.24(월)**
+
+* 모든 뷰: uitextfield에서 max count에 다다르면 버튼 백그라운드 색 바꾸는 작업 구현.
+* 필요에 따라 textfield 값이 특정 count를 넘어가면 안될 때 limit 걸어주는 작업 구현.
+* 
