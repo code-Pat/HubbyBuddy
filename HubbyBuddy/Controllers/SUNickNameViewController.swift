@@ -13,19 +13,36 @@
 import Foundation
 import UIKit
 
-class SUNickNameViewController: UIViewController {
+class SUNickNameViewController: UIViewController, UITextFieldDelegate {
     
     let mainView = SUNickNameView()
+    var nickname: String = ""
     
     override func loadView() {
         self.view = mainView
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        mainView.nicknameTextField.addTarget(self, action: #selector(nicknameTextFieldDidChange(_:)), for: .editingChanged)
         mainView.nextButton.addTarget(self, action: #selector(nextBtnClicked), for: .touchUpInside)
+        
+        mainView.nicknameTextField.delegate = self
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = textField.text else { return true }
+        let newLength = text.count + string.count - range.length
+        if newLength == 10 {
+            mainView.nextButton.backgroundColor = .orange
+        }
+        return newLength <= 10
+    }
+    
+    @objc func nicknameTextFieldDidChange(_ textfield: UITextField) {
+        nickname = textfield.text ?? ""
+        print(nickname)
     }
     
     @objc func nextBtnClicked() {
