@@ -48,6 +48,7 @@ class SUEmailView: UIView {
         emailTextField.attributedPlaceholder = NSAttributedString(string: emailTextField.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
         emailTextField.font = .systemFont(ofSize: 15)
         emailTextField.textAlignment = .left
+        emailTextField.keyboardType = .emailAddress
         
         nextButton.setTitle("다음", for: .normal)
         nextButton.setTitleColor(.systemBackground, for: .normal)

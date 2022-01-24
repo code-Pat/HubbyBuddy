@@ -11,6 +11,7 @@ import UIKit
 class SUEmailViewController: UIViewController {
     
     let mainView = SUEmailView()
+    var emailAddress: String = ""
     
     override func loadView() {
         self.view = mainView
@@ -19,7 +20,14 @@ class SUEmailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        mainView.emailTextField.addTarget(self, action: #selector(emailTextFieldDidChange(_:)), for: .editingChanged)
         mainView.nextButton.addTarget(self, action: #selector(nextBtnClicked), for: .touchUpInside)
+    }
+    
+    @objc func emailTextFieldDidChange(_ textfield: UITextField) {
+        emailAddress = textfield.text ?? ""
+        print(emailAddress)
+        mainView.nextButton.backgroundColor = .orange
     }
     
     @objc func nextBtnClicked() {
