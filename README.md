@@ -48,4 +48,4 @@
 
 * 모든 뷰: uitextfield에서 max count에 다다르면 버튼 백그라운드 색 바꾸는 작업 구현.
 * 필요에 따라 textfield 값이 특정 count를 넘어가면 안될 때 limit 걸어주는 작업 구현.
-* 
+* SMSCode view에 코드 유효 시간을 알려주는 타이머 구현.

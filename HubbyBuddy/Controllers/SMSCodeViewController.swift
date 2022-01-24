@@ -55,8 +55,8 @@ class SMSCodeViewController: UIViewController, UITextFieldDelegate {
     }
     
     func makeTimeLabel(count: Int) -> (String) {
-        let sec = (count / 10) % 60
-        let min = (count / 10) / 60
+        let sec = (count % 3600) % 60
+        let min = (count % 3600) / 60
         
         let sec_string = "\(sec)".count == 1 ? "0\(sec)" : "\(sec)"
         let min_string = "\(min)".count == 1 ? "0\(min)" : "\(min)"

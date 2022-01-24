@@ -105,7 +105,8 @@ class SMSCodeView: UIView {
             make.height.equalTo(48)
         }
         codeTextField.snp.makeConstraints { make in
-            make.top.equalTo(midview.snp.top)
+            //make.top.equalTo(midview.snp.top)
+            make.centerY.equalTo(midview)
             make.leading.equalTo(midview.snp.leading)
             make.width.equalTo(200)
         }

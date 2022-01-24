@@ -33,7 +33,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        self.window = window
         
         
-        let vc = SMSCodeViewController()
+        let vc = SUNickNameViewController()
         //vc.title = "main"
         let navVC = UINavigationController(rootViewController: vc)
         window.rootViewController = navVC
