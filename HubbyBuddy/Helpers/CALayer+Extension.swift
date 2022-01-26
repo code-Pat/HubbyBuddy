@@ -7,7 +7,7 @@
 
 import UIKit
 
-
+// UIView에 테두리를 그릴 수 있는 코드 (top, bottom, left, right 으로 설정)
 extension CALayer {
     func addBorder(_ arr_edge: [UIRectEdge], color: UIColor, width: CGFloat) {
         for edge in arr_edge {
