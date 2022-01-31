@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B2FACD427A10FC700D02945 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2FACD327A10FC700D02945 /* Model.swift */; };
 		6B54633A2796C61300036A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5463392796C61300036A09 /* AppDelegate.swift */; };
 		6B54633C2796C61300036A09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54633B2796C61300036A09 /* SceneDelegate.swift */; };
 		6B5463432796C61900036A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B5463422796C61900036A09 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		588B41C52C6140F16CBB5C12 /* Pods-HubbyBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubbyBuddy.debug.xcconfig"; path = "Target Support Files/Pods-HubbyBuddy/Pods-HubbyBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		6B2FACD327A10FC700D02945 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		6B5463362796C61300036A09 /* HubbyBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubbyBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B5463392796C61300036A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B54633B2796C61300036A09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6B2FACD227A10FB200D02945 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B2FACD327A10FC700D02945 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6B54632D2796C61200036A09 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 			children = (
 				6B5463472796C61900036A09 /* Info.plist */,
 				6B5463612797F18D00036A09 /* GoogleService-Info.plist */,
+				6B2FACD227A10FB200D02945 /* Model */,
 				6B5463682797F87D00036A09 /* Defaults */,
 				6B5463672797F85D00036A09 /* Helpers */,
 				6B5463662797F85700036A09 /* Views */,
@@ -299,6 +310,7 @@
 				6B54634E2796C7AB00036A09 /* LogInView.swift in Sources */,
 				6B5463502796C7DC00036A09 /* LogInViewController.swift in Sources */,
 				6B9BF88A27996BBB00B9ABE7 /* SUBirthView.swift in Sources */,
+				6B2FACD427A10FC700D02945 /* Model.swift in Sources */,
 				6B54633C2796C61300036A09 /* SceneDelegate.swift in Sources */,
 				6B9BF88627995DD500B9ABE7 /* SUNickNameView.swift in Sources */,
 			);
