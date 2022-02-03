@@ -10,5 +10,17 @@ import UIKit
 
 class MyPageViewController: UIViewController {
     
+    let mainView = MyPageView()
+    
+    override func loadView() {
+        self.view = mainView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.navigationItem.title = "내정보"
+    }
+    
 }
 

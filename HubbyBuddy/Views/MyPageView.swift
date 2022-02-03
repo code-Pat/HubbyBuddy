@@ -1,5 +1,5 @@
 //
-//  SeSACHomeView.swift
+//  MyPageView.swift
 //  HubbyBuddy
 //
 //  Created by Donggeun Lee on 2022/02/03.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class SeSACHomeView: UIView {
+class MyPageView: UIView {
     
     let nicknameView = UIView()
     let nicknameImageView = UIImageView()
@@ -49,54 +49,54 @@ class SeSACHomeView: UIView {
         
         self.backgroundColor = .systemBackground
         
-        nicknameImageView.image = UIImage(systemName: "home")
+        nicknameImageView.image = UIImage(systemName: "house")
         nicknameImageView.contentMode = .scaleAspectFill
         
         nicknameLabel.text = "김새싹"
-        nicknameLabel.font = .boldSystemFont(ofSize: 20)
+        nicknameLabel.font = .boldSystemFont(ofSize: 16 )
         nicknameLabel.textColor = .black
         nicknameLabel.textAlignment = .left
         
         nicknameImageView2.image = UIImage(systemName: "greaterthan")
         nicknameImageView2.contentMode = .scaleAspectFill
         
-        announcementImageView.image = UIImage(systemName: "home")
+        announcementImageView.image = UIImage(systemName: "house")
         announcementImageView.contentMode = .scaleAspectFill
         
         announcementLabel.text = "공지사항"
-        announcementLabel.font = .systemFont(ofSize: 20)
+        announcementLabel.font = .systemFont(ofSize: 16)
         announcementLabel.textColor = .black
         announcementLabel.textAlignment = .left
         
-        qnaImageView.image = UIImage(systemName: "home")
+        qnaImageView.image = UIImage(systemName: "house")
         qnaImageView.contentMode = .scaleAspectFill
         
         qnalabel.text = "자주 묻는 질문"
-        qnalabel.font = .systemFont(ofSize: 20)
+        qnalabel.font = .systemFont(ofSize: 16)
         qnalabel.textColor = .black
         qnalabel.textAlignment = .left
         
-        inquiryImageView.image = UIImage(systemName: "home")
+        inquiryImageView.image = UIImage(systemName: "house")
         inquiryImageView.contentMode = .scaleAspectFill
         
         inquiryLabel.text = "1:1 문의"
-        inquiryLabel.font = .systemFont(ofSize: 20)
+        inquiryLabel.font = .systemFont(ofSize: 16)
         inquiryLabel.textColor = .black
         inquiryLabel.textAlignment = .left
         
-        notiImageView.image = UIImage(systemName: "home")
+        notiImageView.image = UIImage(systemName: "house")
         notiImageView.contentMode = .scaleAspectFill
         
         notiLabel.text = "알림 설정"
-        notiLabel.font = .systemFont(ofSize: 20)
+        notiLabel.font = .systemFont(ofSize: 16)
         notiLabel.textColor = .black
         notiLabel.textAlignment = .left
         
-        agreementsImageView.image = UIImage(systemName: "home")
+        agreementsImageView.image = UIImage(systemName: "house")
         agreementsImageView.contentMode = .scaleAspectFill
         
         agreementsLabel.text = "이용 약관"
-        agreementsLabel.font = .systemFont(ofSize: 20)
+        agreementsLabel.font = .systemFont(ofSize: 16)
         agreementsLabel.textColor = .black
         agreementsLabel.textAlignment = .left
     }
@@ -126,7 +126,7 @@ class SeSACHomeView: UIView {
         nicknameView.snp.makeConstraints { make in
             make.top.equalTo(self.safeAreaLayoutGuide)
             make.leading.equalToSuperview().offset(15)
-            make.trailing.equalToSuperview().offset(15)
+            make.trailing.equalToSuperview().offset(-15)
             make.height.equalTo(96)
         }
         
@@ -257,3 +257,4 @@ class SeSACHomeView: UIView {
         }
     }
 }
+

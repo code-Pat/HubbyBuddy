@@ -39,24 +39,24 @@ extension TabbarController {
     private func setTabbarItems() {
         
         let homeVC = UINavigationController(rootViewController: SeSACHomeViewController())
-        homeVC.tabBarItem.selectedImage = UIImage(systemName: "home")
+        homeVC.tabBarItem.selectedImage = UIImage(systemName: "house")
         homeVC.tabBarItem.title = "홈"
-        homeVC.tabBarItem.image = UIImage(systemName: "home.fill")
+        homeVC.tabBarItem.image = UIImage(systemName: "house.fill")
         
         let shopVC = UINavigationController(rootViewController: SeSACShopViewController())
-        shopVC.tabBarItem.selectedImage = UIImage(systemName: "home")
+        shopVC.tabBarItem.selectedImage = UIImage(systemName: "house")
         shopVC.tabBarItem.title = "새싹샵"
-        shopVC.tabBarItem.image = UIImage(systemName: "home.fill")
+        shopVC.tabBarItem.image = UIImage(systemName: "house.fill")
         
         let friendVC = UINavigationController(rootViewController: SeSACFriendViewController())
-        friendVC.tabBarItem.selectedImage = UIImage(systemName: "home")
+        friendVC.tabBarItem.selectedImage = UIImage(systemName: "house")
         friendVC.tabBarItem.title = "새싹 친구"
-        friendVC.tabBarItem.image = UIImage(systemName: "home.fill")
+        friendVC.tabBarItem.image = UIImage(systemName: "house.fill")
         
         let mypageVC = UINavigationController(rootViewController: MyPageViewController())
-        mypageVC.tabBarItem.selectedImage = UIImage(systemName: "home")
+        mypageVC.tabBarItem.selectedImage = UIImage(systemName: "house")
         mypageVC.tabBarItem.title = "내정보"
-        mypageVC.tabBarItem.image = UIImage(systemName: "home.fill")
+        mypageVC.tabBarItem.image = UIImage(systemName: "house.fill")
         
         tabs = [homeVC, shopVC, friendVC, mypageVC]
         
