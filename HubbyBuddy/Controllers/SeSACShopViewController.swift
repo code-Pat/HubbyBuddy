@@ -17,6 +17,8 @@ class SeSACShopViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "새싹샵"
+        
         configureUI()
     }
     
