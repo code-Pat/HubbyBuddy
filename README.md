@@ -70,4 +70,14 @@
 #### **22.02.02(수)**
 
 * Observable 파일 생성
+* Model- User 생성
+* ViewModel - UserViewModel 생성
+
+#### **22.02.03(목)**
+
+* View - SeSACHomeView, MyPageView, MyInfoView, SeSACShopView, SeSACFriendView 생성 및 작업
+* ViewController - SeSACHomeVC, MyPageVC, MyInfoVC, SeSACShopVC, SeSACFriendVC 생성 및 작업
+* MyPageView, MyInfoView UI 기본 작업 완료 -> 추후 reusable ui code 정리하기
+* TabbarController 코드로 커스텀 탭바 작업 완료 -> 이미지랑 탭 간격 및 높이는 추후 조정
+* SeSACShopView - tableview로 작업 시작
 
