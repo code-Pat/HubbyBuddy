@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        self.window = window
         
         
-        let vc = SUGenderViewController()
+        let vc = TabbarController()
         //vc.title = "main"
         let navVC = UINavigationController(rootViewController: vc)
         window.rootViewController = navVC

@@ -37,6 +37,7 @@
 		6BCBDFAF27AB9300000D432E /* SeSACShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBDFAE27AB9300000D432E /* SeSACShopViewController.swift */; };
 		6BCBDFB127AB930D000D432E /* SeSACFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBDFB027AB930D000D432E /* SeSACFriendViewController.swift */; };
 		6BCBDFB327AB931A000D432E /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBDFB227AB931A000D432E /* MyPageViewController.swift */; };
+		6BCBDFB527ABA00D000D432E /* SeSACHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBDFB427ABA00D000D432E /* SeSACHomeView.swift */; };
 		FE598EBF792082550DF44231 /* Pods_HubbyBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE385D60DA1A8AE7CDF6517E /* Pods_HubbyBuddy.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		6BCBDFAE27AB9300000D432E /* SeSACShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACShopViewController.swift; sourceTree = "<group>"; };
 		6BCBDFB027AB930D000D432E /* SeSACFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACFriendViewController.swift; sourceTree = "<group>"; };
 		6BCBDFB227AB931A000D432E /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		6BCBDFB427ABA00D000D432E /* SeSACHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACHomeView.swift; sourceTree = "<group>"; };
 		9D9B8718E4B4031647B011BF /* Pods-HubbyBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubbyBuddy.release.xcconfig"; path = "Target Support Files/Pods-HubbyBuddy/Pods-HubbyBuddy.release.xcconfig"; sourceTree = "<group>"; };
 		EE385D60DA1A8AE7CDF6517E /* Pods_HubbyBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HubbyBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -175,6 +177,7 @@
 				6B9BF88927996BBB00B9ABE7 /* SUBirthView.swift */,
 				6B9BF88D279A7A6800B9ABE7 /* SUEmailView.swift */,
 				6B9BF891279A82BF00B9ABE7 /* SUGenderView.swift */,
+				6BCBDFB427ABA00D000D432E /* SeSACHomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				6BCBDFAF27AB9300000D432E /* SeSACShopViewController.swift in Sources */,
 				6B5463522796C80B00036A09 /* UILabel+Extension.swift in Sources */,
 				6B9BF894279A82C800B9ABE7 /* SUGenderViewController.swift in Sources */,
+				6BCBDFB527ABA00D000D432E /* SeSACHomeView.swift in Sources */,
 				6B9BF88827995DE500B9ABE7 /* SUNickNameViewController.swift in Sources */,
 				6BCBDFAD27AB92F7000D432E /* SeSACHomeViewController.swift in Sources */,
 				6B5463602797F08700036A09 /* SMSCodeViewController.swift in Sources */,

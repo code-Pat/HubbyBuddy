@@ -14,6 +14,8 @@ class TabbarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setTabBarAppearance()
+        setTabbarItems()
     }
     
     override func viewDidLayoutSubviews() {
@@ -38,7 +40,7 @@ extension TabbarController {
         
         let homeVC = UINavigationController(rootViewController: SeSACHomeViewController())
         homeVC.tabBarItem.selectedImage = UIImage(systemName: "home")
-        homeVC.tabBarItem.title = "home"
+        homeVC.tabBarItem.title = "홈"
         homeVC.tabBarItem.image = UIImage(systemName: "home.fill")
         
         let shopVC = UINavigationController(rootViewController: SeSACShopViewController())
