@@ -79,5 +79,5 @@
 * ViewController - SeSACHomeVC, MyPageVC, MyInfoVC, SeSACShopVC, SeSACFriendVC 생성 및 작업
 * MyPageView, MyInfoView UI 기본 작업 완료 -> 추후 reusable ui code 정리하기
 * TabbarController 코드로 커스텀 탭바 작업 완료 -> 이미지랑 탭 간격 및 높이는 추후 조정
-* SeSACShopView - tableview로 작업 시작
+* SeSACShopView - tableview로 작업 시작 -> 새싹샵은 collectionView로 해야함... 내일 수정하기, sesacfriends 를 tableView 작업
 
