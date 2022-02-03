@@ -41,6 +41,8 @@
 		6BCBDFB727ABB6C2000D432E /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBDFB627ABB6C2000D432E /* MyPageView.swift */; };
 		6BCBDFB927ABBDDD000D432E /* MyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBDFB827ABBDDD000D432E /* MyInfoView.swift */; };
 		6BCBDFBB27ABD4DF000D432E /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBDFBA27ABD4DE000D432E /* MyInfoViewController.swift */; };
+		6BCBDFBD27ABE81C000D432E /* SeSACShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBDFBC27ABE81C000D432E /* SeSACShopView.swift */; };
+		6BCBDFBF27ABE88D000D432E /* SeSACFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBDFBE27ABE88D000D432E /* SeSACFriendView.swift */; };
 		FE598EBF792082550DF44231 /* Pods_HubbyBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE385D60DA1A8AE7CDF6517E /* Pods_HubbyBuddy.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		6BCBDFB627ABB6C2000D432E /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		6BCBDFB827ABBDDD000D432E /* MyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoView.swift; sourceTree = "<group>"; };
 		6BCBDFBA27ABD4DE000D432E /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
+		6BCBDFBC27ABE81C000D432E /* SeSACShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACShopView.swift; sourceTree = "<group>"; };
+		6BCBDFBE27ABE88D000D432E /* SeSACFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACFriendView.swift; sourceTree = "<group>"; };
 		9D9B8718E4B4031647B011BF /* Pods-HubbyBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubbyBuddy.release.xcconfig"; path = "Target Support Files/Pods-HubbyBuddy/Pods-HubbyBuddy.release.xcconfig"; sourceTree = "<group>"; };
 		EE385D60DA1A8AE7CDF6517E /* Pods_HubbyBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HubbyBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -187,6 +191,8 @@
 				6BCBDFB427ABA00D000D432E /* SeSACHomeView.swift */,
 				6BCBDFB627ABB6C2000D432E /* MyPageView.swift */,
 				6BCBDFB827ABBDDD000D432E /* MyInfoView.swift */,
+				6BCBDFBC27ABE81C000D432E /* SeSACShopView.swift */,
+				6BCBDFBE27ABE88D000D432E /* SeSACFriendView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -364,12 +370,14 @@
 				6B5463522796C80B00036A09 /* UILabel+Extension.swift in Sources */,
 				6B9BF894279A82C800B9ABE7 /* SUGenderViewController.swift in Sources */,
 				6BCBDFB527ABA00D000D432E /* SeSACHomeView.swift in Sources */,
+				6BCBDFBD27ABE81C000D432E /* SeSACShopView.swift in Sources */,
 				6B9BF88827995DE500B9ABE7 /* SUNickNameViewController.swift in Sources */,
 				6BCBDFAD27AB92F7000D432E /* SeSACHomeViewController.swift in Sources */,
 				6BCBDFBB27ABD4DF000D432E /* MyInfoViewController.swift in Sources */,
 				6B5463602797F08700036A09 /* SMSCodeViewController.swift in Sources */,
 				6B9BF88E279A7A6800B9ABE7 /* SUEmailView.swift in Sources */,
 				6BCBDFB927ABBDDD000D432E /* MyInfoView.swift in Sources */,
+				6BCBDFBF27ABE88D000D432E /* SeSACFriendView.swift in Sources */,
 				6B54634E2796C7AB00036A09 /* LogInView.swift in Sources */,
 				6B5463502796C7DC00036A09 /* LogInViewController.swift in Sources */,
 				6BCBDFB727ABB6C2000D432E /* MyPageView.swift in Sources */,
