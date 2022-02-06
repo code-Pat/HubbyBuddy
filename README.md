@@ -73,6 +73,8 @@
 * Model- User 생성
 * ViewModel - UserViewModel 생성
 
+---
+
 #### **22.02.03(목)**
 
 * View - SeSACHomeView, MyPageView, MyInfoView, SeSACShopView, SeSACFriendView 생성 및 작업
@@ -81,3 +83,9 @@
 * TabbarController 코드로 커스텀 탭바 작업 완료 -> 이미지랑 탭 간격 및 높이는 추후 조정
 * SeSACShopView - tableview로 작업 시작 -> 새싹샵은 collectionView로 해야함... 내일 수정하기, sesacfriends 를 tableView 작업
 
+---
+
+#### **22.02.04(금)**
+
+* SeSACFriendView - tableview 작업 시작 -> Friend model, viewmodel 필요
+* SeSACShopView - tableview에서 collectionview로 수정 -> Shop model, viewmodel 필요
