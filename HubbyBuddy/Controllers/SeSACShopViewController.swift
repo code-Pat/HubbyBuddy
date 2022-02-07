@@ -10,39 +10,44 @@ import UIKit
 
 class SeSACShopViewController: UIViewController {
     
-    private var collectionView: UICollectionView?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
-        layout.itemSize = CGSize(width: view.frame.size.width/2, height: view.frame.size.width/2)
-        
-        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        
-        guard let collectionView = collectionView else {
-            return
-        }
-        collectionView.register(SeSACShopCollectionViewCell.self, forCellWithReuseIdentifier: SeSACShopCollectionViewCell.identifier)
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        view.addSubview(collectionView)
-        collectionView.frame = view.bounds
-    }
     
 }
 
-extension SeSACShopViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SeSACShopCollectionViewCell.identifier, for: indexPath)
-        return cell
-    }
-}
+//class SeSACShopViewController: UIViewController {
+//
+//    private var collectionView: UICollectionView?
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        let layout = UICollectionViewFlowLayout()
+//        layout.scrollDirection = .vertical
+//        layout.itemSize = CGSize(width: view.frame.size.width/2, height: view.frame.size.width/2)
+//
+//        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+//
+//        guard let collectionView = collectionView else {
+//            return
+//        }
+//        collectionView.register(SeSACShopCollectionViewCell.self, forCellWithReuseIdentifier: SeSACShopCollectionViewCell.identifier)
+//        collectionView.dataSource = self
+//        collectionView.delegate = self
+//        view.addSubview(collectionView)
+//        collectionView.frame = view.bounds
+//    }
+//
+//}
+//
+//extension SeSACShopViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return 5
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SeSACShopCollectionViewCell.identifier, for: indexPath)
+//        return cell
+//    }
+//}
 
 //extension SeSACShopViewController: UICollectionViewDelegateFlowLayout {
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
