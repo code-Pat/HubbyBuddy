@@ -100,4 +100,7 @@
 * SeSACShopViewController - 콜렉션 뷰를 도입하는데 조금 이슈가 있어서 시간이 오래걸림, 콜렉션뷰 셀과 뷰, 뷰컨트롤러 세개를 연결해서 코드로 콜렉션 뷰를 구현해보는게 처음이라 조금 어색함 -> 데이터 모델링을 하고나면 다시 하면 정리하기.
 * SeSACShopCollectionViewCell - 콜렉션 뷰 셀은 따로 구현함.
 * SeSACBaseView - 페이져 탭을 이용해 shop1, shop2 두 화면을 오가야 하기때문에 pager tab에 구애받지 않는 base view와 base viewcontroller를 설정해야함. -> 먼저 했어야 했는데 깜빡하고 shop 페이지를 먼저 구현해버려서 시간이 더 지체됨.
+* SeSACShop2View - pager tab으로 넘어가는 배경 탭에 속하는 뷰 UI 구성 완료
+* SeSACShop2ViewController - 새싹 샵 배경 탭에 속하는 뷰 컨트롤러, 기본 셋업 완료
+* SeSACShop2CollectionViewCell - 새싹 샵 배경 탭에 속하는 콜렉션 뷰 셀, UI 구성 완료
 
