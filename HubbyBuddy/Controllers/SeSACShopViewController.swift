@@ -17,6 +17,7 @@ class SeSACShopViewController: UIViewController {
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
+        layout.itemSize = CGSize(width: view.frame.size.width/2, height: view.frame.size.width/2)
         
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         
@@ -27,7 +28,7 @@ class SeSACShopViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         view.addSubview(collectionView)
-        //collectionView.frame = view.bounds
+        collectionView.frame = view.bounds
     }
     
 }
@@ -43,11 +44,11 @@ extension SeSACShopViewController: UICollectionViewDelegate, UICollectionViewDat
     }
 }
 
-extension SeSACShopViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemSpacing: CGFloat = 10
-        let myWidth: CGFloat = (collectionView.bounds.width - itemSpacing * 2) / 3
-        
-        return CGSize(width: myWidth, height: myWidth)
-    }
-}
+//extension SeSACShopViewController: UICollectionViewDelegateFlowLayout {
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let itemSpacing: CGFloat = 10
+//        let myWidth: CGFloat = (collectionView.bounds.width - itemSpacing * 2) / 3
+//
+//        return CGSize(width: myWidth, height: myWidth)
+//    }
+//}

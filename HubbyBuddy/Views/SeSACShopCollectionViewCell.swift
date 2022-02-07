@@ -20,7 +20,7 @@ class SeSACShopCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.backgroundColor = .systemBackground
+        
         
         setup()
         setupConstraints()
@@ -31,6 +31,8 @@ class SeSACShopCollectionViewCell: UICollectionViewCell {
     }
     
     func setup() {
+        
+        self.backgroundColor = .white
         
         imageView.image = UIImage(named: "sesac_face_01")
         imageView.contentMode = .scaleToFill
