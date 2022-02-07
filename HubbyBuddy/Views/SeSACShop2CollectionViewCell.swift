@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 class SeSACShop2CollectionViewCell: UICollectionViewCell {
     
