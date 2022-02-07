@@ -14,21 +14,25 @@ class SeSACShopView: UIView {
     let topImageView = UIImageView()
     
     var collectionView: UICollectionView = {
+        
         var layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.sectionInset = .zero
-        layout.itemSize = CGSize(width: UIScreen.main.bounds.width / 2 - 30, height: UIScreen.main.bounds.width / 2 + 60)
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.width / 2 - 40, height: UIScreen.main.bounds.width / 2 + 50)
         
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        
         cv.backgroundColor = .systemBackground
         return cv
     }()
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         setup()
         setupConstraints()
+       
     }
     
     required init?(coder: NSCoder) {

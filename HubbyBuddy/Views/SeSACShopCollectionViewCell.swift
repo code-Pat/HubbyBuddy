@@ -36,6 +36,7 @@ class SeSACShopCollectionViewCell: UICollectionViewCell {
         
         //imageView.image = UIImage(named: "sesac_face_01")
         imageView.contentMode = .scaleToFill
+        imageView.layer.addBorder([.top, .bottom, .left, .right], color: .systemGray, width: 1.0)
         
         //nameLabel.text = "기본 새싹"
         nameLabel.font = .systemFont(ofSize: 16)
