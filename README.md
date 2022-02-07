@@ -5,9 +5,11 @@
 ## Project Description
 * 사용자의 현재 위치를 기반으로 미리 설정해둔 사용자의 취미와 같은 취미를 갖은 주위 사람들을 매칭 및 함께 취미 활동을 즐길 수 있도록 해주는 서비스
 
-## Frameworks & Libraries
+## Frameworks & Libraries & Design Patterns
 * [Snapkit] 프로젝트 내 모든 UI구성은 snapkit을 활용한 코드로만 구현
 * [Firebase] Auth를 활용해 휴대폰 번호 인증 및 로그인 기능 구현
+* [Moya] Alamofire과 moya의 고민 끝에 조금 더 라이트하고 사이즈가 커졌을때 문제가 적은 moya를 선택 -> 사실 이 정도 규모의 프로젝트에서 둘의 능률이나 단점 면에서 큰 차이는 없다고 생각하지만, alamofire는 이미 사용해 봤기 때문에 moya를 써보고 싶었다.
+* MVVM 패턴을 채택 -> User(auth), Shop, Friends 등등 데이터와 화면 구성이 많이 나뉘어 지기 때문에 최대한 균등한 무게감과 추후 편한 관리를 위해 MVVM이 가장 적합하다고 생각함. 물론 연습해보기 위함도 있음.
 
 ## Daily Reports
 
@@ -89,3 +91,13 @@
 
 * SeSACFriendView - tableview 작업 시작 -> Friend model, viewmodel 필요
 * SeSACShopView - tableview에서 collectionview로 수정 -> Shop model, viewmodel 필요
+
+---
+
+#### **22.02.07(월)**
+
+* SeSACShopView - collection view를 이용해 ui 구성 -> 사이즈랑 이미지 테두리 정리하기
+* SeSACShopViewController - 콜렉션 뷰를 도입하는데 조금 이슈가 있어서 시간이 오래걸림, 콜렉션뷰 셀과 뷰, 뷰컨트롤러 세개를 연결해서 코드로 콜렉션 뷰를 구현해보는게 처음이라 조금 어색함 -> 데이터 모델링을 하고나면 다시 하면 정리하기.
+* SeSACShopCollectionViewCell - 콜렉션 뷰 셀은 따로 구현함.
+* SeSACBaseView - 페이져 탭을 이용해 shop1, shop2 두 화면을 오가야 하기때문에 pager tab에 구애받지 않는 base view와 base viewcontroller를 설정해야함. -> 먼저 했어야 했는데 깜빡하고 shop 페이지를 먼저 구현해버려서 시간이 더 지체됨.
+
