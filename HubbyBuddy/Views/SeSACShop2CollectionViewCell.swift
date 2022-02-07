@@ -1,5 +1,5 @@
 //
-//  SeSACShopCollectionViewCell.swift
+//  SeSACShop2CollectionViewCell.swift
 //  HubbyBuddy
 //
 //  Created by Donggeun Lee on 2022/02/07.
@@ -7,11 +7,10 @@
 
 import Foundation
 import UIKit
-import SnapKit
 
-class SeSACShopCollectionViewCell: UICollectionViewCell {
+class SeSACShop2CollectionViewCell: UICollectionViewCell {
     
-    static let identifier = "cvCell"
+    static let identifier = "cv2Cell"
     
     let imageView = UIImageView()
     let nameLabel = UILabel()
@@ -32,23 +31,18 @@ class SeSACShopCollectionViewCell: UICollectionViewCell {
     
     func setup() {
         
-        //self.backgroundColor = .white
-        
-        //imageView.image = UIImage(named: "sesac_face_01")
         imageView.contentMode = .scaleToFill
         imageView.layer.addBorder([.top, .bottom, .left, .right], color: .systemGray, width: 1.0)
-        
-        //nameLabel.text = "기본 새싹"
+        imageView.layer.cornerRadius = 15
+
         nameLabel.font = .systemFont(ofSize: 16)
         nameLabel.textColor = .black
         nameLabel.textAlignment = .left
         
-        //pointLabel.text = "보유"
         pointLabel.font = .systemFont(ofSize: 14)
         pointLabel.textColor = .systemGray
         pointLabel.textAlignment = .center
         
-        //descriptionLabel.text = "새싹을 대표하는 기본 식물입니다. 다른 새싹들과 함께 하는 것을 좋아합니다"
         descriptionLabel.font = .systemFont(ofSize: 14)
         descriptionLabel.textColor = .black
         descriptionLabel.textAlignment = .left
@@ -65,30 +59,28 @@ class SeSACShopCollectionViewCell: UICollectionViewCell {
         imageView.snp.makeConstraints { make in
             make.top.equalToSuperview()
             make.leading.equalToSuperview()
-            make.trailing.equalToSuperview()
-            make.height.width.equalTo(165)
+            make.width.height.equalTo(165)
         }
         
         nameLabel.snp.makeConstraints { make in
-            make.top.equalTo(imageView.snp.bottom).offset(8)
-            make.leading.equalToSuperview()
-            make.width.equalTo(65)
-            make.height.equalTo(30)
+            make.top.equalToSuperview().offset(40)
+            make.leading.equalTo(imageView.snp.trailing).offset(10)
+            make.width.equalTo(60)
+            make.height.equalTo(25)
         }
         
         pointLabel.snp.makeConstraints { make in
             make.centerY.equalTo(nameLabel)
             make.trailing.equalToSuperview()
             make.width.equalTo(40)
-            make.height.equalTo(30)
+            make.height.equalTo(20)
         }
         
         descriptionLabel.snp.makeConstraints { make in
-            make.top.equalTo(nameLabel.snp.bottom).offset(8)
-            make.leading.equalToSuperview()
+            make.top.equalTo(nameLabel.snp.bottom).offset(10)
+            make.leading.equalTo(imageView.snp.trailing).offset(10)
             make.trailing.equalToSuperview()
-            make.height.equalTo(75)
-            
+            make.bottom.equalToSuperview()
         }
     }
 }

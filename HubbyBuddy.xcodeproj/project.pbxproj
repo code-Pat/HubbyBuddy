@@ -10,6 +10,8 @@
 		6B0CAE1327B0DD6D00ECF2E8 /* SeSACShopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CAE1227B0DD6D00ECF2E8 /* SeSACShopCollectionViewCell.swift */; };
 		6B0CAE1527B15E6000ECF2E8 /* SeSACBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CAE1427B15E6000ECF2E8 /* SeSACBaseView.swift */; };
 		6B0CAE1727B15F2600ECF2E8 /* SeSACBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CAE1627B15F2600ECF2E8 /* SeSACBaseViewController.swift */; };
+		6B0CAE1927B1642A00ECF2E8 /* SeSACShop2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CAE1827B1642A00ECF2E8 /* SeSACShop2View.swift */; };
+		6B0CAE1B27B1644400ECF2E8 /* SeSACShop2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CAE1A27B1644400ECF2E8 /* SeSACShop2CollectionViewCell.swift */; };
 		6B2FACD627A9673000D02945 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2FACD527A9673000D02945 /* User.swift */; };
 		6B2FACD927A9674900D02945 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2FACD827A9674900D02945 /* UserViewModel.swift */; };
 		6B54633A2796C61300036A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5463392796C61300036A09 /* AppDelegate.swift */; };
@@ -54,6 +56,8 @@
 		6B0CAE1227B0DD6D00ECF2E8 /* SeSACShopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACShopCollectionViewCell.swift; sourceTree = "<group>"; };
 		6B0CAE1427B15E6000ECF2E8 /* SeSACBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACBaseView.swift; sourceTree = "<group>"; };
 		6B0CAE1627B15F2600ECF2E8 /* SeSACBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACBaseViewController.swift; sourceTree = "<group>"; };
+		6B0CAE1827B1642A00ECF2E8 /* SeSACShop2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACShop2View.swift; sourceTree = "<group>"; };
+		6B0CAE1A27B1644400ECF2E8 /* SeSACShop2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACShop2CollectionViewCell.swift; sourceTree = "<group>"; };
 		6B2FACD527A9673000D02945 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6B2FACD827A9674900D02945 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		6B5463362796C61300036A09 /* HubbyBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubbyBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +206,8 @@
 				6B0CAE1227B0DD6D00ECF2E8 /* SeSACShopCollectionViewCell.swift */,
 				6BCBDFBE27ABE88D000D432E /* SeSACFriendView.swift */,
 				6B0CAE1427B15E6000ECF2E8 /* SeSACBaseView.swift */,
+				6B0CAE1827B1642A00ECF2E8 /* SeSACShop2View.swift */,
+				6B0CAE1A27B1644400ECF2E8 /* SeSACShop2CollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -377,6 +383,7 @@
 				6B2FACD627A9673000D02945 /* User.swift in Sources */,
 				6BCBDFAF27AB9300000D432E /* SeSACShopViewController.swift in Sources */,
 				6B5463522796C80B00036A09 /* UILabel+Extension.swift in Sources */,
+				6B0CAE1927B1642A00ECF2E8 /* SeSACShop2View.swift in Sources */,
 				6B9BF894279A82C800B9ABE7 /* SUGenderViewController.swift in Sources */,
 				6BCBDFB527ABA00D000D432E /* SeSACHomeView.swift in Sources */,
 				6B0CAE1527B15E6000ECF2E8 /* SeSACBaseView.swift in Sources */,
@@ -395,6 +402,7 @@
 				6B9BF88A27996BBB00B9ABE7 /* SUBirthView.swift in Sources */,
 				6B54633C2796C61300036A09 /* SceneDelegate.swift in Sources */,
 				6B2FACD927A9674900D02945 /* UserViewModel.swift in Sources */,
+				6B0CAE1B27B1644400ECF2E8 /* SeSACShop2CollectionViewCell.swift in Sources */,
 				6B0CAE1327B0DD6D00ECF2E8 /* SeSACShopCollectionViewCell.swift in Sources */,
 				6B9BF88627995DD500B9ABE7 /* SUNickNameView.swift in Sources */,
 			);
