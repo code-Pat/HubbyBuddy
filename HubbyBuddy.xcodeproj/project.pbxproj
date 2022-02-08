@@ -122,6 +122,157 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6B0CAE1E27B2A5D100ECF2E8 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CAE1F27B2A5DB00ECF2E8 /* LogIn */,
+				6B0CAE2027B2A5F200ECF2E8 /* SMSCode */,
+				6B0CAE2127B2A5F900ECF2E8 /* NickName */,
+				6B0CAE2227B2A60200ECF2E8 /* Birth */,
+				6B0CAE2327B2A60A00ECF2E8 /* Email */,
+				6B0CAE2427B2A61100ECF2E8 /* Gender */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		6B0CAE1F27B2A5DB00ECF2E8 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				6B54634D2796C7AB00036A09 /* LogInView.swift */,
+				6B54634F2796C7DC00036A09 /* LogInViewController.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		6B0CAE2027B2A5F200ECF2E8 /* SMSCode */ = {
+			isa = PBXGroup;
+			children = (
+				6B5463632797F7B900036A09 /* SMSCodeView.swift */,
+				6B54635F2797F08700036A09 /* SMSCodeViewController.swift */,
+			);
+			path = SMSCode;
+			sourceTree = "<group>";
+		};
+		6B0CAE2127B2A5F900ECF2E8 /* NickName */ = {
+			isa = PBXGroup;
+			children = (
+				6B9BF88527995DD500B9ABE7 /* SUNickNameView.swift */,
+				6B9BF88727995DE500B9ABE7 /* SUNickNameViewController.swift */,
+			);
+			path = NickName;
+			sourceTree = "<group>";
+		};
+		6B0CAE2227B2A60200ECF2E8 /* Birth */ = {
+			isa = PBXGroup;
+			children = (
+				6B9BF88927996BBB00B9ABE7 /* SUBirthView.swift */,
+				6B9BF88B279971B800B9ABE7 /* SUBirthViewController.swift */,
+			);
+			path = Birth;
+			sourceTree = "<group>";
+		};
+		6B0CAE2327B2A60A00ECF2E8 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				6B9BF88D279A7A6800B9ABE7 /* SUEmailView.swift */,
+				6B9BF88F279A7A7300B9ABE7 /* SUEmailViewController.swift */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		6B0CAE2427B2A61100ECF2E8 /* Gender */ = {
+			isa = PBXGroup;
+			children = (
+				6B9BF891279A82BF00B9ABE7 /* SUGenderView.swift */,
+				6B9BF893279A82C800B9ABE7 /* SUGenderViewController.swift */,
+			);
+			path = Gender;
+			sourceTree = "<group>";
+		};
+		6B0CAE2527B2A69600ECF2E8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6BCBDFB427ABA00D000D432E /* SeSACHomeView.swift */,
+				6BCBDFAC27AB92F7000D432E /* SeSACHomeViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6B0CAE2627B2A6A000ECF2E8 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CAE2727B2A6B700ECF2E8 /* Base */,
+				6B0CAE2827B2A6C100ECF2E8 /* Character */,
+				6B0CAE2A27B2A6E800ECF2E8 /* Background */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		6B0CAE2727B2A6B700ECF2E8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CAE1427B15E6000ECF2E8 /* SeSACBaseView.swift */,
+				6B0CAE1627B15F2600ECF2E8 /* SeSACBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6B0CAE2827B2A6C100ECF2E8 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				6BCBDFBC27ABE81C000D432E /* SeSACShopView.swift */,
+				6B0CAE1227B0DD6D00ECF2E8 /* SeSACShopCollectionViewCell.swift */,
+				6BCBDFAE27AB9300000D432E /* SeSACShopViewController.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		6B0CAE2A27B2A6E800ECF2E8 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CAE1827B1642A00ECF2E8 /* SeSACShop2View.swift */,
+				6B0CAE1A27B1644400ECF2E8 /* SeSACShop2CollectionViewCell.swift */,
+				6B0CAE1C27B1672D00ECF2E8 /* SeSACShop2ViewController.swift */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		6B0CAE2B27B2A76700ECF2E8 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				6BCBDFBE27ABE88D000D432E /* SeSACFriendView.swift */,
+				6BCBDFB027AB930D000D432E /* SeSACFriendViewController.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		6B0CAE2C27B2A78300ECF2E8 /* MyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CAE2D27B2A7B100ECF2E8 /* MyPage */,
+				6B0CAE2E27B2A7C200ECF2E8 /* Info Management */,
+			);
+			path = MyInfo;
+			sourceTree = "<group>";
+		};
+		6B0CAE2D27B2A7B100ECF2E8 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				6BCBDFB227AB931A000D432E /* MyPageViewController.swift */,
+				6BCBDFB627ABB6C2000D432E /* MyPageView.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		6B0CAE2E27B2A7C200ECF2E8 /* Info Management */ = {
+			isa = PBXGroup;
+			children = (
+				6BCBDFBA27ABD4DE000D432E /* MyInfoViewController.swift */,
+				6BCBDFB827ABBDDD000D432E /* MyInfoView.swift */,
+			);
+			path = "Info Management";
+			sourceTree = "<group>";
+		};
 		6B2FACD227A10FB200D02945 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +312,11 @@
 			children = (
 				6B5463472796C61900036A09 /* Info.plist */,
 				6B5463612797F18D00036A09 /* GoogleService-Info.plist */,
+				6B0CAE1E27B2A5D100ECF2E8 /* Auth */,
+				6B0CAE2527B2A69600ECF2E8 /* Main */,
+				6B0CAE2627B2A6A000ECF2E8 /* Shop */,
+				6B0CAE2B27B2A76700ECF2E8 /* Friends */,
+				6B0CAE2C27B2A78300ECF2E8 /* MyInfo */,
 				6B2FACD227A10FB200D02945 /* Model */,
 				6B5463682797F87D00036A09 /* Defaults */,
 				6BCBDFA527AA8E69000D432E /* API */,
@@ -175,20 +331,7 @@
 		6B5463652797F85100036A09 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6B54634F2796C7DC00036A09 /* LogInViewController.swift */,
-				6B54635F2797F08700036A09 /* SMSCodeViewController.swift */,
-				6B9BF88727995DE500B9ABE7 /* SUNickNameViewController.swift */,
-				6B9BF88B279971B800B9ABE7 /* SUBirthViewController.swift */,
-				6B9BF88F279A7A7300B9ABE7 /* SUEmailViewController.swift */,
-				6B9BF893279A82C800B9ABE7 /* SUGenderViewController.swift */,
 				6BCBDFAA27AB9065000D432E /* TabbarController.swift */,
-				6BCBDFAC27AB92F7000D432E /* SeSACHomeViewController.swift */,
-				6BCBDFAE27AB9300000D432E /* SeSACShopViewController.swift */,
-				6B0CAE1627B15F2600ECF2E8 /* SeSACBaseViewController.swift */,
-				6BCBDFB027AB930D000D432E /* SeSACFriendViewController.swift */,
-				6BCBDFB227AB931A000D432E /* MyPageViewController.swift */,
-				6BCBDFBA27ABD4DE000D432E /* MyInfoViewController.swift */,
-				6B0CAE1C27B1672D00ECF2E8 /* SeSACShop2ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,21 +339,6 @@
 		6B5463662797F85700036A09 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6B54634D2796C7AB00036A09 /* LogInView.swift */,
-				6B5463632797F7B900036A09 /* SMSCodeView.swift */,
-				6B9BF88527995DD500B9ABE7 /* SUNickNameView.swift */,
-				6B9BF88927996BBB00B9ABE7 /* SUBirthView.swift */,
-				6B9BF88D279A7A6800B9ABE7 /* SUEmailView.swift */,
-				6B9BF891279A82BF00B9ABE7 /* SUGenderView.swift */,
-				6BCBDFB427ABA00D000D432E /* SeSACHomeView.swift */,
-				6BCBDFB627ABB6C2000D432E /* MyPageView.swift */,
-				6BCBDFB827ABBDDD000D432E /* MyInfoView.swift */,
-				6BCBDFBC27ABE81C000D432E /* SeSACShopView.swift */,
-				6B0CAE1227B0DD6D00ECF2E8 /* SeSACShopCollectionViewCell.swift */,
-				6BCBDFBE27ABE88D000D432E /* SeSACFriendView.swift */,
-				6B0CAE1427B15E6000ECF2E8 /* SeSACBaseView.swift */,
-				6B0CAE1827B1642A00ECF2E8 /* SeSACShop2View.swift */,
-				6B0CAE1A27B1644400ECF2E8 /* SeSACShop2CollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
