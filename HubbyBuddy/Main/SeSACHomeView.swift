@@ -20,7 +20,7 @@ class SeSACHomeView: UIView {
         
         setup()
         setupConstraints()
-       
+        addCustomPin()
     }
     
     required init?(coder: NSCoder) {
@@ -28,7 +28,14 @@ class SeSACHomeView: UIView {
     }
     
     func setup() {
-        map.setRegion(MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)), animated: false)
+        map.setRegion(MKCoordinateRegion(
+            center: coordinate,
+            span: MKCoordinateSpan(
+                latitudeDelta: 0.1,
+                longitudeDelta: 0.1
+            )
+        ),
+             animated: false)
     }
     
     func setupConstraints() {
@@ -39,6 +46,13 @@ class SeSACHomeView: UIView {
             make.leading.trailing.equalToSuperview()
             make.bottom.equalTo(safeAreaLayoutGuide)
         }
+    }
+    
+    private func addCustomPin() {
+        let pin = MKPointAnnotation()
+        pin.title = "Me"
+        pin.subtitle = "here I am"
+        map.addAnnotation(pin)
     }
     
     
