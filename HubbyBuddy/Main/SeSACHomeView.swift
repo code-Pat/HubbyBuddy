@@ -7,9 +7,42 @@
 
 import UIKit
 import SnapKit
+import MapKit
+import CoreLocation
 
 class SeSACHomeView: UIView {
     
+    let map = MKMapView()
+    let coordinate = CLLocationCoordinate2D(latitude: 40.728, longitude: -74)
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        setup()
+        setupConstraints()
+       
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    func setup() {
+        map.setRegion(MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)), animated: false)
+    }
+    
+    func setupConstraints() {
+        addSubview(map)
+        
+        map.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.leading.trailing.equalToSuperview()
+            make.bottom.equalTo(safeAreaLayoutGuide)
+        }
+    }
+    
+    
+}
 //    let nicknameView = UIView()
 //    let nicknameImageView = UIImageView()
 //    let nicknameLabel = UILabel()
@@ -256,4 +289,4 @@ class SeSACHomeView: UIView {
 //            make.trailing.equalTo(agreementsView.snp.trailing).offset(-40)
 //        }
 //    }
-}
+

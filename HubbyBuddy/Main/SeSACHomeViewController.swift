@@ -10,6 +10,13 @@ import SnapKit
 
 class SeSACHomeViewController: UIViewController {
     
+    let mainView = SeSACHomeView()
     
-    
+    override func loadView() {
+        self.view = mainView
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
 }

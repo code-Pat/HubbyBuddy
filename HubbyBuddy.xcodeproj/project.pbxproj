@@ -13,6 +13,7 @@
 		6B0CAE1927B1642A00ECF2E8 /* SeSACShop2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CAE1827B1642A00ECF2E8 /* SeSACShop2View.swift */; };
 		6B0CAE1B27B1644400ECF2E8 /* SeSACShop2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CAE1A27B1644400ECF2E8 /* SeSACShop2CollectionViewCell.swift */; };
 		6B0CAE1D27B1672D00ECF2E8 /* SeSACShop2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CAE1C27B1672D00ECF2E8 /* SeSACShop2ViewController.swift */; };
+		6B0CAE3027B37DC500ECF2E8 /* PagingTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CAE2F27B37DC500ECF2E8 /* PagingTabbar.swift */; };
 		6B2FACD627A9673000D02945 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2FACD527A9673000D02945 /* User.swift */; };
 		6B2FACD927A9674900D02945 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2FACD827A9674900D02945 /* UserViewModel.swift */; };
 		6B54633A2796C61300036A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5463392796C61300036A09 /* AppDelegate.swift */; };
@@ -60,6 +61,7 @@
 		6B0CAE1827B1642A00ECF2E8 /* SeSACShop2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACShop2View.swift; sourceTree = "<group>"; };
 		6B0CAE1A27B1644400ECF2E8 /* SeSACShop2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACShop2CollectionViewCell.swift; sourceTree = "<group>"; };
 		6B0CAE1C27B1672D00ECF2E8 /* SeSACShop2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACShop2ViewController.swift; sourceTree = "<group>"; };
+		6B0CAE2F27B37DC500ECF2E8 /* PagingTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTabbar.swift; sourceTree = "<group>"; };
 		6B2FACD527A9673000D02945 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6B2FACD827A9674900D02945 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		6B5463362796C61300036A09 /* HubbyBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubbyBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -332,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				6BCBDFAA27AB9065000D432E /* TabbarController.swift */,
+				6B0CAE2F27B37DC500ECF2E8 /* PagingTabbar.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				6B5463562796C84000036A09 /* CALayer+Extension.swift in Sources */,
 				6B2FACD627A9673000D02945 /* User.swift in Sources */,
 				6BCBDFAF27AB9300000D432E /* SeSACShopViewController.swift in Sources */,
+				6B0CAE3027B37DC500ECF2E8 /* PagingTabbar.swift in Sources */,
 				6B5463522796C80B00036A09 /* UILabel+Extension.swift in Sources */,
 				6B0CAE1927B1642A00ECF2E8 /* SeSACShop2View.swift in Sources */,
 				6B9BF894279A82C800B9ABE7 /* SUGenderViewController.swift in Sources */,
